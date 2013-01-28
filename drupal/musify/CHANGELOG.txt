@@ -1,0 +1,10 @@
+30 Jan 2013 by Jak Carr @ Netiva www.netiva.co.uk: 
+Fixed line ending and variable errors in musify.php
+Added License, Readme and Changelog files
+Moved contents of module.info to README.txt
+Added new module.info file
+Added help blocks
+Changed php include for musify.php to Drupal module_load_include
+Formatting changes to match Drupal coding standards
+
+27 May 2012 by Corey Mwamba: Drupal module version

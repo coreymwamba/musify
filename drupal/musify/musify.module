@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * @file
+ * Provides a Musify input filter.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function musify_help($path = 'admin/help#musify', $arg) {
+  switch ($path) {
+    case 'admin/help#musify':
+      return t('<p>The musify filter allows you to enter tagged content using <a href="http://musify.coreymwamba.co.uk">musify</a>, a quick mark-up for chord symbol notation.</p>');
+      break;
+  }
+}
+
+/**
+ * Implements hook_filter_info().
+ */
+function musify_filter_info() {
+  $filters['filter_musify'] = array(
+    'title' => t('musify'),
+    'description' => t('Allows tagged content to be submitted using musify, a quick mark-up for chord symbol notation.'),
+    'process callback' => '_filter_musify',
+    'tips callback' => '_filter_musify_tips',
+  );
+  return $filters;
+}
+
+/**
+ * Returns the musify input filter tips.
+ */
+function _filter_musify_tips($format, $long = FALSE) {
+  if ($long) {
+    return t('Use <strong>[mus]...[/mus]</strong> to mark out the notation. Some quick hints: <ul>
+      <li>$, £, ¤ = flat</li>
+      <li># = sharp</li>
+      <li>## = double sharp</li>
+      <li>? = natural</li>
+      <li>[[...]] = superscript</li>
+      <li>((...)) = superscripted brackets</li>
+      <li>{{4//4}} = time signature/slash chords</li>
+      </ul>
+    ');
+  }
+  else {
+    return t('You can use <a href="@musify_help">musify</a> to format your chord symbol/quick music notation.', array('@musify_help' => 'http://musify.coreymwamba.co.uk/#scrib'));
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function musify_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'musify_help':
+      $block['title'] = t('Musify filter tips');
+      $block['content'] = _musify_help_block();
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function musify_block_info() {
+  $blocks = array();
+  $blocks['musify_help'] = array(
+    'info' => t('Musify filter tips'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Filter process callback.
+ */
+function _filter_musify($text, $format) {
+  if (!empty($text)) {
+    module_load_include('php', 'musify', 'musify');
+    $text = musify_tag($text);
+  }
+
+  return $text;
+}
