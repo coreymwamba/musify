@@ -28,9 +28,11 @@
    1. modified the ties so that they now look better, at least here.
    2. changed the flat, sharp, double sharp, natural, diminished and half-diminished symbols to abbreviations in the PHP version only.
    3. added a single bar simile mark (%) - thanks to Charlie Evans for bringing it to my attention!
+   
    ###29 May
    1. added a function called musify_tag to PHP only - BBCode-like. Wrapping text in **[mus]...[/mus]** will transform it. Can be used with Markdown as long as the function does its magic before Markdown.
    2. Made a stab at a Drupal module. No idea if it works but it should.
+   
    ###26 May
    1. I've finally worked out a way of adding double sharps - documentation amended
    2. Changed the codes of certain characters (ties, half diminished,  set theory brackets) so they have more of a chance of showing up - but using a Unicode font is essential.
