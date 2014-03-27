@@ -3,8 +3,8 @@
 .musden {font-size: 70%; white-space: nowrap; vertical-align: -0.1ex;}
 .musdim {font-weight:normal; font-size: 110% !important; vertical-align: 0.1ex;}
 .mushdim {font-weight:normal; font-size: 80% !important;  }
-.musitie {vertical-align: text-bottom; font-size: 150%; line-height: 1}
-.musotie {font-size: 150%; vertical-align: text-top}
+.musitie {font-size: 150%; line-height: 1em; position: relative; top: 1em;}
+.musotie {font-size: 150%; line-height: 1em; position: relative; bottom: 0.75em;}
 .dblsharp {-ms-transform: rotate(45deg); -o-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); font-size: 80%; vertical-align:middle }
 abbr[title="simile"] { -ms-transform: rotate(-30deg); -moz-transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -o-transform: rotate(-30deg);  transform: rotate(-30deg);  text-decoration: none !important; border-width: 0px ! important; font-weight: 700; font-size: 1.3em}
 /*stop browsers from putting the dotted border under abbreviations*/
