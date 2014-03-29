@@ -81,6 +81,7 @@ $text = str_replace("--", $tied, $text);
 $text = str_replace("^", $tri, $text);
 $text = str_replace ("!!", $br, $text);
 $text = str_replace ('<abbr title="flat"><abbr title="flat">&#9837;</abbr></abbr>', $flat, $text);
+$text = str_replace ('<abbr title="simile"><abbr title="simile">&#247;</abbr></abbr>', $simile, text);
 return $text;
 }
 
@@ -100,4 +101,4 @@ $str = str_replace($subj,$mus,$str);
 return $str;
 }
 
-?>
+?>musotie
