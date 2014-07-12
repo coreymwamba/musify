@@ -5,7 +5,7 @@
 .mushdim {font-weight:normal; font-size: 80% !important;  }
 .musitie {vertical-align: text-bottom; font-size: 150%; line-height: 1}
 .musotie {font-size: 150%; vertical-align: text-top}
-.dblsharp {-ms-transform: rotate(45deg); -o-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); font-size: 80%; vertical-align:middle }
+.dblsharp {display: inline-block; -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); font-size: 80%; vertical-align:middle }
 abbr[title="simile"] { -ms-transform: rotate(-30deg); -moz-transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -o-transform: rotate(-30deg);  transform: rotate(-30deg);  text-decoration: none !important; border-width: 0px ! important; font-weight: 700; font-size: 1.3em}
 /*stop browsers from putting the dotted border under abbreviations*/
 abbr[title=flat],abbr[title=sharp], abbr[title="double sharp"], abbr[title=natural],abbr[title="half-diminished"], abbr[title=diminished] {text-decoration: none !important; border-width: 0px ! important}
