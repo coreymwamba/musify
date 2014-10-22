@@ -23,7 +23,7 @@
    
    ##2012
    ###1 Sep
-   For some reason - and I'll be blown if I can find out out what that reason is - the abbr element for flats was repeating itself. So I've fixed it.
+   For some reason - and I'll be blown if I can find out what that reason is - the abbr element for flats was repeating itself. So I've fixed it.
    ###13 Jul
    1. modified the ties so that they now look better, at least here.
    2. changed the flat, sharp, double sharp, natural, diminished and half-diminished symbols to abbreviations in the PHP version only.
