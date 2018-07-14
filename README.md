@@ -8,12 +8,12 @@
 
    Extract the archive and upload the files to your server (or upload the archive and extract it on your server).
    
-   Then use your web browser to look at <http://musify.coreymwamba.co.uk/>
+   Then use your web browser to look at <https://www.coreymwamba.co.uk/musify>
    
    Thanks for trying musify!
 
 2. SUPPORT
-   If you're stuck or something doesn't work, get in touch at <http://www.coreymwamba.co.uk/contact/>
+   If you're stuck or something doesn't work, get in touch at <https://www.coreymwamba.co.uk/contact/>
 
 3. CHANGES
    ## 2013
